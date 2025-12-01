@@ -665,7 +665,7 @@ h1, h2, h3, h4, h5, h6 {
       rgba(6, 13, 23, 0.75) 0%,
       rgba(6, 13, 23, 0.85) 100%
     ),
-    url('/assets/images/desert-sunset.jpg') center center / cover no-repeat;
+    url('../images/desert-sunset.jpg') center center / cover no-repeat;
 }
 
 .footer-content h3 {
