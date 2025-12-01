@@ -87,13 +87,9 @@ h1, h2, h3, h4, h5, h6 {
 .section-title::after {
   content: '';
   display: block;
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(90deg,
-    var(--color-uae-green) 0%,
-    var(--color-uae-black) 50%,
-    var(--color-uae-red) 100%
-  );
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
   margin: 16px auto 0;
 }
 
