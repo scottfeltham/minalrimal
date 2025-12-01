@@ -414,6 +414,88 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   STRATEGIC DRIVERS SECTION
+   ============================================ */
+.drivers-section {
+  background: var(--color-navy);
+}
+
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.drivers-grid .driver-card:last-child {
+  grid-column: 2 / 3;
+}
+
+@media (max-width: 900px) {
+  .drivers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .drivers-grid .driver-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .drivers-grid {
+    grid-template-columns: 1fr;
+  }
+  .drivers-grid .driver-card:last-child {
+    max-width: 100%;
+  }
+}
+
+.driver-card {
+  background: rgba(20, 34, 56, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: var(--transition-medium);
+}
+
+.driver-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.4);
+  background: rgba(20, 34, 56, 0.8);
+}
+
+.driver-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+  border-radius: 50%;
+}
+
+.driver-icon i {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+}
+
+.driver-card h3 {
+  color: var(--color-gold);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.driver-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ============================================
    LYRICS SECTION
    ============================================ */
 .lyrics-section {
