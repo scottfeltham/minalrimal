@@ -1,0 +1,45 @@
+# Site Settings
+title: "Min Al Rimal | Dubai City Anthem 2025"
+description: "An unofficial tribute to the People of Dubai – to its Rulers and Founding Leaders, to the People of Determination, and to every person who helped build this city with diligence, resilience, and unwavering determination."
+url: ""
+baseurl: ""
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+
+# Theme
+theme: null
+
+# Plugins for GitHub Pages
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.pdf"
+  - .forge
+
+# Default language
+lang: en
+
+# Site metadata
+author: "Renji Joseph"
+year: 2025
+
+# Social links (to be updated with actual URLs)
+social:
+  youtube: "#"
+  spotify: "#"
+  apple_music: "#"
+  instagram: "#"
+  linkedin: "#"
+  tiktok: "#"
+
+# Contact
+contact_email: ""
+port: 4001
