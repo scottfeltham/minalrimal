@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
       rgba(10, 22, 40, 0.7) 50%,
       rgba(20, 34, 56, 0.8) 100%
     ),
-    url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&q=80') center center / cover no-repeat fixed;
+    url('../images/burj.jpeg') center center / cover no-repeat fixed;
   overflow: hidden;
 }
 
@@ -661,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {
       rgba(6, 13, 23, 0.75) 0%,
       rgba(6, 13, 23, 0.85) 100%
     ),
-    url('../images/desert-sunset.jpg') center center / cover no-repeat;
+    url('../images/group.jpeg') center center / cover no-repeat;
 }
 
 .footer-content h3 {
