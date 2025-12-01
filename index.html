@@ -225,18 +225,24 @@ title: "Min Al Rimal | From the Sands | Dubai City Anthem 2025"
     <div class="share-buttons">
       <h3>Listen & Watch</h3>
       <div class="platform-links">
-        <a href="https://youtu.be/FHFqMRasPnU" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" aria-label="Watch on YouTube">
+        {% if site.links.youtube_video != "" %}
+        <a href="{{ site.links.youtube_video }}" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" aria-label="Watch on YouTube">
           <i class="fab fa-youtube"></i>
           <span>YouTube</span>
         </a>
-        <a href="#" class="platform-btn spotify" aria-label="Listen on Spotify">
+        {% endif %}
+        {% if site.links.spotify != "" %}
+        <a href="{{ site.links.spotify }}" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" aria-label="Listen on Spotify">
           <i class="fab fa-spotify"></i>
           <span>Spotify</span>
         </a>
-        <a href="#" class="platform-btn apple" aria-label="Listen on Apple Music">
+        {% endif %}
+        {% if site.links.apple_music != "" %}
+        <a href="{{ site.links.apple_music }}" target="_blank" rel="noopener noreferrer" class="platform-btn apple" aria-label="Listen on Apple Music">
           <i class="fab fa-apple"></i>
           <span>Apple Music</span>
         </a>
+        {% endif %}
       </div>
     </div>
 
@@ -246,33 +252,47 @@ title: "Min Al Rimal | From the Sands | Dubai City Anthem 2025"
         <a href="#" class="social-btn whatsapp" aria-label="Share on WhatsApp">
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="#" class="social-btn linkedin" aria-label="Share on LinkedIn">
+        {% if site.social.linkedin != "" %}
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" class="social-btn linkedin" aria-label="Share on LinkedIn">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="#" class="social-btn twitter" aria-label="Share on X/Twitter">
+        {% endif %}
+        {% if site.social.twitter != "" %}
+        <a href="{{ site.social.twitter }}" target="_blank" rel="noopener noreferrer" class="social-btn twitter" aria-label="Share on X/Twitter">
           <i class="fab fa-x-twitter"></i>
         </a>
-        <a href="#" class="social-btn facebook" aria-label="Share on Facebook">
+        {% endif %}
+        {% if site.social.facebook != "" %}
+        <a href="{{ site.social.facebook }}" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Share on Facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
+        {% endif %}
       </div>
     </div>
 
     <div class="social-follow">
       <h3>Follow</h3>
       <div class="follow-links">
-        <a href="#" class="follow-btn" aria-label="Instagram">
+        {% if site.social.instagram != "" %}
+        <a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="Instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="follow-btn" aria-label="YouTube Channel">
+        {% endif %}
+        {% if site.links.youtube_channel != "" %}
+        <a href="{{ site.links.youtube_channel }}" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="YouTube Channel">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="#" class="follow-btn" aria-label="LinkedIn">
+        {% endif %}
+        {% if site.social.linkedin != "" %}
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="LinkedIn">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="#" class="follow-btn" aria-label="TikTok">
+        {% endif %}
+        {% if site.social.tiktok != "" %}
+        <a href="{{ site.social.tiktok }}" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="TikTok">
           <i class="fab fa-tiktok"></i>
         </a>
+        {% endif %}
       </div>
     </div>
   </div>

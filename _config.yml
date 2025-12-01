@@ -31,14 +31,20 @@ lang: en
 author: "Renji Joseph"
 year: 2025
 
-# Social links (to be updated with actual URLs)
+# Links - Platform URLs
+links:
+  youtube_video: "https://youtu.be/FHFqMRasPnU"
+  youtube_channel: ""
+  spotify: ""
+  apple_music: ""
+
+# Links - Social profiles
 social:
-  youtube: "#"
-  spotify: "#"
-  apple_music: "#"
-  instagram: "#"
-  linkedin: "#"
-  tiktok: "#"
+  instagram: ""
+  linkedin: ""
+  tiktok: ""
+  twitter: ""
+  facebook: ""
 
 # Contact
 contact_email: ""
