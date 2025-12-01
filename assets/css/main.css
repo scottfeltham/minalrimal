@@ -91,12 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 4px;
   background: linear-gradient(90deg,
     var(--color-uae-green) 0%,
-    var(--color-uae-green) 25%,
-    var(--color-uae-white) 25%,
-    var(--color-uae-white) 50%,
     var(--color-uae-black) 50%,
-    var(--color-uae-black) 75%,
-    var(--color-uae-red) 75%,
     var(--color-uae-red) 100%
   );
   margin: 16px auto 0;
