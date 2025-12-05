@@ -278,6 +278,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   FULL SONG SECTION - GLOBAL EDITION
+   ============================================ */
+.full-song-section {
+  background: linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+  text-align: center;
+}
+
+.release-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+  color: var(--color-navy-dark);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+}
+
+.release-badge i {
+  font-size: 0.75rem;
+}
+
+.release-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--color-gold);
+  font-size: 1rem;
+  margin-bottom: 32px;
+}
+
+.release-date i {
+  font-size: 1rem;
+}
+
+.video-wrapper.featured {
+  box-shadow: 0 20px 80px rgba(212, 175, 55, 0.2), 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+/* ============================================
    VIDEO SECTION
    ============================================ */
 .video-section {
@@ -613,6 +660,235 @@ h1, h2, h3, h4, h5, h6 {
 
 .dedication-content strong {
   color: var(--color-gold);
+}
+
+/* ============================================
+   PHASE 2 - EXTENDED ARABIC EDITION
+   ============================================ */
+.phase2-section {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 50%, var(--color-navy) 100%);
+  text-align: center;
+}
+
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.coming-soon-badge i {
+  font-size: 0.875rem;
+}
+
+.phase2-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.phase2-content {
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.phase2-content p {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.phase2-content strong {
+  color: var(--color-gold);
+}
+
+.phase2-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.phase2-image {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  position: relative;
+  cursor: pointer;
+  aspect-ratio: 16 / 10;
+}
+
+.phase2-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.phase2-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 40px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--color-white);
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+}
+
+.image-overlay i {
+  font-size: 1rem;
+}
+
+.phase2-image:hover .image-overlay {
+  opacity: 1;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  z-index: 10000;
+}
+
+.lightbox-close:hover {
+  color: var(--color-gold);
+}
+
+#lightbox-img {
+  max-width: 95%;
+  max-height: 95vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   CONTACT SECTION - PARTNERSHIPS & LICENSING
+   ============================================ */
+.contact-section {
+  background: var(--color-navy-light);
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: var(--color-navy);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all var(--transition-medium);
+}
+
+.contact-btn i {
+  font-size: 1.5rem;
+}
+
+.contact-btn.whatsapp:hover {
+  background: #25d366;
+  border-color: #25d366;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+}
+
+.contact-btn.linkedin:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 119, 181, 0.3);
+}
+
+.contact-btn.youtube:hover {
+  background: #ff0000;
+  border-color: #ff0000;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .phase2-gallery {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
 }
 
 /* ============================================
